@@ -60,58 +60,15 @@
     background: none;
 }
 
-
-/* RESPONSIVE MEDIA QUERY HOME*/
-@media (max-width: 1104px){
-    .home .max-width{
-        margin-left: 0px;
-    }
-}
-
-@media (max-width: 947px){
-    .max-width{
-        padding: 0 50px;
-    }
-
-    .home .home-content .text:nth-child(2){
-        font-size: 70px;
-    }
-    
-    .home .home-content .text:nth-child(3){
-        font-size: 35px;
-
-    }
-
-    .home .home-content .text:nth-child(4){
-        font-size: 23px;
-        padding: 10px 30px;
-    }
-}
-
-@media (max-width: 768px){
-    .home .home-content .text:nth-child(2){
-        font-size: 50px;
-    }
-    
-    .home .home-content .text:nth-child(3){
-        font-size: 20px;
-
-    }
-
-    .home .home-content .text:nth-child(4){
-        font-size: 20px;
-    }
-}
-
-/* ABOUT STYLE */
 section{
     padding: 100px 0;
 }
-.about{
+
+.about, .skill{
     font-family: 'Poppins', sans-serif;
 }
 
-.about .title{
+section .title{
     position: relative;
     text-align: center;
     font-size: 40px;
@@ -121,7 +78,7 @@ section{
     font-family: 'Ubuntu', sans-serif;
 }
 
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -132,8 +89,7 @@ section{
     transform: translateX(-50%);
 }
 
-.about .title::after{
-    content: "Who I Am ?";
+section .title::after{
     position: absolute;
     bottom: -15px;
     left: 50%;
@@ -144,11 +100,17 @@ section{
     transform: translateX(-50%);
 }
 
-.about .about-content{
+/* ABOUT STYLE */
+.about .title::after{
+    content: "Who I Am ?";
+}
+
+.about .about-content,
+.skill .skill-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .about .about-content .left{
@@ -184,11 +146,191 @@ section{
     display: inline-block;
     background-color: crimson;
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
     cursor: pointer;
     border: 2px solid crimson;
     transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover{
+    color: crimson;
+    background: none;
+}
+
+/* SKILL */
+.skill .title::after{
+    content: "What i know?";
+}
+
+.skill .skill-content .column{
+    width: calc(50% - 30px);
+}
+
+.skill .skill-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skill .skill-content .left p{
+    text-align: justify;
+}
+
+.skill .skill-content .left a{
+    display: inline-block;
+    background-color: crimson;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.skill .skill-content .left a:hover{
+    color: crimson;
+    background: none;
+}
+
+.skill .skill-content .right .bars{
+    margin-bottom: 15px;
+}
+
+.skill .skill-content .right .bars .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill .skill-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skill .skill-content .right .line{
+    height: 5px;
+    width: 100%;
+    background-color: lightgrey;
+    position: relative;
+}
+
+.skill .skill-content .right .line:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skill .skill-content .right .HTML:before{
+    width: 80%;
+}
+
+.skill .skill-content .right .CSS:before{
+    width: 70%;
+}
+
+.skill .skill-content .right .Javascript:before{
+    width: 70%;
+}
+
+.skill .skill-content .right .Typescript:before{
+    width: 60%;
+}
+
+.skill .skill-content .right .React:before{
+    width: 80%;
+}
+
+.skill .skill-content .right .NodeJS :before{
+    width: 60%;
+}
+
+.skill .skill-content .right .Angular:before{
+    width: 70%;
+}
+
+
+/* RESPONSIVE MEDIA QUERY*/
+@media (max-width: 1300px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1104px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+
+@media (max-width: 947px){
+    /* HOME */
+    .max-width{
+        padding: 0 50px;
+    }
+
+    .home .home-content .text:nth-child(2){
+        font-size: 70px;
+    }
+    
+    .home .home-content .text:nth-child(3){
+        font-size: 35px;
+
+    }
+
+    .home .home-content .text:nth-child(4){
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+
+    /* ABOUT */
+    .max-width{
+        max-width: 800px;
+    }
+
+    .about .about-content .column{
+        width: 50%;
+    }
+
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 6px;
+    }
+
+    .about .about-content .right{
+        flex: 100%;
+    }
+
+    /* SKILL */
+    .skill .skill-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    
+}
+
+@media (max-width: 768px){
+    .home .home-content .text:nth-child(2){
+        font-size: 50px;
+    }
+    
+    .home .home-content .text:nth-child(3){
+        font-size: 20px;
+
+    }
+
+    .home .home-content .text:nth-child(4){
+        font-size: 20px;
+    }
 }

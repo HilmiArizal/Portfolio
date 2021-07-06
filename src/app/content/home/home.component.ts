@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { MatTableDataSource } from '@angular/material/table';
+import { Response } from 'src/app/interface/response';
+import { Skill } from 'src/app/interface/skill';
+import { SkillService } from 'src/app/service/skill.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +11,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  public dataSkill!: Skill[];
+
+  constructor(
+    private skillService: SkillService
+  ) { }
 
   ngOnInit(): void {
+    this.getSkill();
+  }
+
+  getSkill(){
+    this.skillService.getSkill().subscribe((res) => {
+      let response: Response = res;
+      let responseContent = response.content;
+      this.dataSkill = responseContent!;
+    });
   }
 
 }
