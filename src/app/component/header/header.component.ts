@@ -11,7 +11,6 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-
     $(document).ready(function () {
       $(window).scroll(function () {
         if (this.scrollY > 20) {
@@ -21,12 +20,31 @@ export class HeaderComponent implements OnInit {
         }
       })
 
-      $('.menu-btn').click(function(){
+      $('.menu-btn').click(function () {
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
       })
     })
+  }
 
+  routerScroll(rs: any) {
+    switch (rs) {
+      case 'home':
+        document.getElementById(rs)?.scrollIntoView({ behavior: "smooth" });
+        break;
+      case 'about':
+        document.getElementById(rs)?.scrollIntoView({ behavior: "smooth" });
+        break;
+      case 'skill':
+        document.getElementById(rs)?.scrollIntoView({ behavior: "smooth" });
+        break;
+      case 'project':
+        document.getElementById(rs)?.scrollIntoView({ behavior: "smooth" });
+        break;
+      case 'contact':
+        document.getElementById(rs)?.scrollIntoView({ behavior: "smooth" });
+        break;
+    }
   }
 
 }

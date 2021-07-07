@@ -10,13 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './component/material.module';
 import { SkillService } from './service/skill.service';
 import { HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
+import { ScrollUpBtnComponent } from './component/scroll-up-btn/scroll-up-btn.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ContentComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    ScrollUpBtnComponent
   ],
   imports: [
     BrowserModule,

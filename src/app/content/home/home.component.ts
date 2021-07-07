@@ -13,20 +13,10 @@ export class HomeComponent implements OnInit {
 
   public dataSkill!: Skill[];
 
-  constructor(
-    private skillService: SkillService
-  ) { }
+  constructor() { }
 
   ngOnInit(): void {
-    this.getSkill();
   }
 
-  getSkill(){
-    this.skillService.getSkill().subscribe((res) => {
-      let response: Response = res;
-      let responseContent = response.content;
-      this.dataSkill = responseContent!;
-    });
-  }
 
 }

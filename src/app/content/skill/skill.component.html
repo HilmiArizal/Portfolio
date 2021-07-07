@@ -1,0 +1,32 @@
+<div class="skill">
+
+    <div class="max-width">
+        <h2 class="title">My Skills</h2>
+        <div class="skill-content">
+          <div class="column left">
+            <div class="text">My Creative Skills & Experience</div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident dolorem ipsa excepturi repellat amet
+              quaerat soluta eos! Doloribus atque consequatur deleniti officia magni unde beatae! Voluptas, dignissimos
+              amet soluta quam quibusdam dolorum facere fugit exercitationem quo ab sunt, repellendus perferendis quis!
+              Sed possimus omnis at aliquam officia facere architecto iste, eius eos facilis minus delectus eum
+              dignissimos quaerat mollitia! Labore.</p>
+            <a href="#">Read more</a>
+          </div>
+          <div class="column right" *ngIf="dataSkill;else dataEmpty">
+            <div *ngFor="let item of dataSkill">
+              <div class="bars">
+                <div class="info">
+                  <span>{{item.skill}}</span>
+                  <span>{{item.percentage}}%</span>
+                </div>
+                <div class="line {{item.skill}}"></div>
+              </div>
+            </div>
+          </div>
+          <ng-template #dataEmpty>
+            Data Is Empty
+          </ng-template>
+        </div>
+      </div>
+
+</div>

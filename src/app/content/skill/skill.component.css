@@ -1,0 +1,162 @@
+/* SKILL STYLE */
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.skill{
+    font-family: 'Poppins', sans-serif;
+}
+
+.title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background-color: #111;
+    transform: translateX(-50%);
+}
+
+.title::after{
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+
+.skill .title::after{
+    content: "Who I Am ?";
+}
+
+.skill .skill-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill .skill-content .column{
+    width: calc(50% - 30px);
+}
+
+.skill .skill-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skill .skill-content .left p{
+    text-align: justify;
+}
+
+.skill .skill-content .left a{
+    display: inline-block;
+    background-color: crimson;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 20px;
+    margin-top: 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.skill .skill-content .left a:hover{
+    color: crimson;
+    background: none;
+}
+
+.skill .skill-content .right .bars{
+    margin-bottom: 15px;
+}
+
+.skill .skill-content .right .bars .info{
+    display: flex;
+    margin-bottom: 5px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skill .skill-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skill .skill-content .right .line{
+    height: 5px;
+    width: 100%;
+    background-color: lightgrey;
+    position: relative;
+}
+
+.skill .skill-content .right .line:before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+
+.skill .skill-content .right .HTML:before{
+    width: 80%;
+}
+
+.skill .skill-content .right .CSS:before{
+    width: 70%;
+}
+
+.skill .skill-content .right .Javascript:before{
+    width: 70%;
+}
+
+.skill .skill-content .right .Typescript:before{
+    width: 60%;
+}
+
+.skill .skill-content .right .React:before{
+    width: 80%;
+}
+
+.skill .skill-content .right .NodeJS :before{
+    width: 60%;
+}
+
+.skill .skill-content .right .Angular:before{
+    width: 70%;
+}
+
+
+/* RESPONSIVE MEDIA QUERY*/
+@media (max-width: 947px){
+    /* SKILL */
+    .max-width{
+        padding: 0 50px;
+    }
+
+    .skill .skill-content .column{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    
+}
