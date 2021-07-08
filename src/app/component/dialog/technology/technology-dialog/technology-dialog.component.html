@@ -1,0 +1,52 @@
+<div class="body-tech" mat-dialog-content>
+
+  <div class="title-tech">Detail Technology Using</div>
+
+  <div class="detail-tech">
+    <table align="center" cellpadding="5" align="center" width="800">
+      <tr>
+        <td>Project Name</td>
+        <td>: {{dataTech.name}}</td>
+      </tr>
+      <tr>
+        <td>Category Project</td>
+        <td>: {{dataTech.category}}</td>
+      </tr>
+      <tr>
+        <td>Type Project</td>
+        <td>: {{dataTech.type}}</td>
+      </tr>
+      <tr>
+        <td>Technology using</td>
+      </tr>
+      <tr>
+        <td style="font-weight: normal;">Language </td>
+        <td>: {{dataListTech.language}}</td>
+      </tr>
+      <tr>
+        <td style="font-weight: normal;">Front End </td>
+        <td>: {{dataListTech.frontend}}, {{dataListTech.mobile}}</td>
+      </tr>
+      <tr>
+        <td style="font-weight: normal;">Back End </td>
+        <td>: {{dataListTech.backend}}</td>
+      </tr>
+      <tr>
+        <td style="font-weight: normal;">Database </td>
+        <td>: {{dataListTech.database}}</td>
+      </tr>
+      <tr>
+        <td style="font-weight: normal;">Tools </td>
+        <td>: {{dataListTech.tools}}</td>
+      </tr>
+      <tr>
+        <td>Teams</td>
+      </tr>
+      <tr *ngFor="let item of dataListMember">
+          <td style="font-weight: normal;">Member</td>
+          <td>: {{item.name}} <i class="fa fa-arrow-right"></i> {{item.position}}</td>
+      </tr>
+    </table>
+  </div>
+
+</div>

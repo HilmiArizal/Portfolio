@@ -26,7 +26,7 @@ import { ScrollUpBtnComponent } from './component/scroll-up-btn/scroll-up-btn.co
     MaterialModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    HttpClientJsonpModule
+    HttpClientJsonpModule,
   ],
   providers: [SkillService],
   bootstrap: [AppComponent]

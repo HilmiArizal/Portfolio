@@ -23,7 +23,6 @@ export class SkillComponent implements OnInit {
   getSkill(){
     this.skillService.getSkill().subscribe((res) => {
       let response: Response = res;
-      console.log(res);
       let responseContent = response.content;
       this.dataSkill = responseContent!;
     });

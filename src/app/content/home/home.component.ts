@@ -11,8 +11,6 @@ import { SkillService } from 'src/app/service/skill.service';
 })
 export class HomeComponent implements OnInit {
 
-  public dataSkill!: Skill[];
-
   constructor() { }
 
   ngOnInit(): void {

@@ -5,7 +5,8 @@
 export const environment = {
   production: false,
   url: {
-    dataSkill: '../assets/dummy/skill.json'
+    dataSkill: '../assets/dummy/skill.json',
+    dataProject: '../assets/dummy/project.json'
   }
 };
 

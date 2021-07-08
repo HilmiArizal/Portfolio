@@ -61,8 +61,13 @@
 
 section{
     padding: 100px 0;
+    min-height: 100vh;
 }
 
+.project{
+    color: #fff;
+    background: #111;
+}
 
 /* RESPONSIVE MEDIA QUERY*/
 @media (max-width: 1300px){

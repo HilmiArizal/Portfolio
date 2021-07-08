@@ -1,5 +1,4 @@
 /* SKILL STYLE */
-
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
@@ -25,7 +24,7 @@
     position: absolute;
     bottom: 0px;
     left: 50%;
-    width: 180px;
+    width: 200px;
     height: 3px;
     background-color: #111;
     transform: translateX(-50%);
@@ -43,7 +42,7 @@
 }
 
 .skill .title::after{
-    content: "Who I Am ?";
+    content: "Who I Know ?";
 }
 
 .skill .skill-content{

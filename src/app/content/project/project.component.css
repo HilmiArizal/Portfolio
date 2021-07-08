@@ -1,0 +1,149 @@
+/* PROJECT STYLE */
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.project{
+    font-family: 'Poppins', sans-serif;
+}
+
+.title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 250px;
+    height: 3px;
+    background-color: #fff;
+    transform: translateX(-50%);
+}
+
+.title::after{
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 5px;
+    background-color: #111;
+    transform: translateX(-50%);
+}
+
+.project .title::after{
+    content: "What I Have Done ?";
+}
+
+.project .card{
+    background-color: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+}
+
+.card-project{
+    padding: 2em;
+    height: 250px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.card-project img{
+    transition: all 0.5s ease;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    transition: all 0.5s ease;
+  }
+
+  .card-project:hover img {
+    opacity: 0.5;
+  }
+  
+  .card-project:hover .middle {
+    opacity: 1;
+  }
+
+  .btn-tech{
+    display: inline-block;
+    background-color: crimson;
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+  }
+
+.text-tech{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.project ::ng-deep.owl-prev, .project ::ng-deep.owl-next{
+    color: #111;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+}
+
+.project ::ng-deep.owl-prev {
+    left: -7px;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.project ::ng-deep.owl-prev:hover {
+    background-color: crimson;
+}
+
+.project ::ng-deep.owl-next {
+    right: -57px;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+.project ::ng-deep.owl-next:hover {
+    background-color: crimson;
+}
+
+.project ::ng-deep.owl-prev i, .project ::ng-deep.owl-next i{
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* RESPONSIVE MEDIA QUERY*/
+@media (max-width: 947px){
+    .project .title::after{
+        content: "What I Have Done ?";
+        font-size: 13px;
+    } 
+    .project .card{
+        padding: 0px;
+    }
+}

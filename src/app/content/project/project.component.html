@@ -1,0 +1,23 @@
+<div class="project">
+
+  <div class="max-width">
+    <h2 class="title">My Project</h2>
+    <div *ngIf="dataProject;else dataEmpty" class="card">
+      <owl-carousel-o [options]="customOptions" >
+        <ng-container *ngFor="let item of dataProject">
+          <ng-template carouselSlide>
+            <div class="card-project">
+              <img [src]="item.coverImage" alt="img" width="100%">
+              <div class="text-tech">{{item.name}}</div>
+              <div class="middle">
+                <button class="btn-tech" (click)="detailTech(item)">Technology</button>
+              </div>
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+    <ng-template #dataEmpty>Data Is Empty</ng-template>
+  </div>
+
+</div>

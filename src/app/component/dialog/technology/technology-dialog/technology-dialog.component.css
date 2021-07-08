@@ -1,0 +1,10 @@
+.title-tech{
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+tr td:nth-child(1){
+    font-weight: bold;
+}

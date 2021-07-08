@@ -13,10 +13,9 @@ export class SkillService {
 
   constructor(private http: HttpClient) {
     this.dataUrl = environment.url.dataSkill;
-    this.getSkill();
   }
 
   getSkill() {
-    return this.http.get(this.dataUrl)
+    return this.http.get(this.dataUrl);
   }
 }
