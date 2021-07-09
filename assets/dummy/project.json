@@ -1,0 +1,142 @@
+{
+    "content": [
+        {
+            "id": 1,
+            "coverImage": "assets/images/SarenOne.png",
+            "name": "SarenOne e-Commerce",
+            "category": "e-Commerce",
+            "member": [
+                {
+                    "name": "Hilmi Arizal",
+                    "position": "Fullstack Developer (Web)"
+                }
+            ],
+            "technology": {
+                "language": "Javascript",
+                "mobile": null,
+                "frontend": "React JS",
+                "backend": "Node JS",
+                "database": "WorkBench",
+                "tools": "Adobe Photoshop, Bootstrap, Postman, Github"
+            },
+            "type": "Big Project"
+        },
+        {
+            "id": 2,
+            "coverImage": "assets/images/SarenOne-Admin.png",
+            "name": "SarenOne e-Commerce Admin",
+            "category": "e-Commerce",
+            "member": [
+                {
+                    "name": "Hilmi Arizal",
+                    "position": "Fullstack Developer (Web)"
+                }
+            ],
+            "technology": {
+                "language": "Javascript",
+                "mobile": null,
+                "frontend": "React JS",
+                "backend": "Node JS",
+                "database": "WorkBench",
+                "tools": "Adobe Photoshop, Bootstrap, Postman, Github"
+            },
+            "type": "Big Project"
+        },
+        {
+            "id": 3,
+            "coverImage": "assets/images/Pipel.png",
+            "name": "Pipel",
+            "category": "Goverment App",
+            "member": [
+                {
+                    "name": "Hilmi Arizal",
+                    "position": "Front End Developer (Web)"
+                },
+                {
+                    "name": "Herza Fellani",
+                    "position": "Back End Developer (Web)"
+                },
+                {
+                    "name": "Ferdi Haspi",
+                    "position": "Front End Developer (Mobile)"
+                },
+                {
+                    "name": "Dwi Sutrisno",
+                    "position": "Back End Developer (Mobile)"
+                }
+            ],
+            "technology": {
+                "language": "Javascript, Typescript, Dart",
+                "mobile": "Flutter",
+                "frontend": "Angular",
+                "backend": "Java Spring",
+                "database": "MariaDB, MongoDB",
+                "tools": "Adobe XD, Bootstrap, Insomnia, Swagger, Github"
+            },
+            "type": "Big Project"
+        },
+        {
+            "id": 4,
+            "coverImage": "assets/images/HilmiChat.png",
+            "name": "HilmiChat App",
+            "category": "Chat App",
+            "member": [
+                {
+                    "name": "Hilmi Arizal",
+                    "position": "Fullstack Developer (Web)"
+                }
+            ],
+            "technology": {
+                "language": "Javascript",
+                "mobile": null,
+                "frontend": "React JS",
+                "backend": "Node JS",
+                "database": "WorkBench",
+                "tools": "Socket IO, Bootstrap, Postman, Github"
+            },
+            "type": "Mini Project"
+        },
+        {
+            "id": 5,
+            "coverImage": "assets/images/WeatherApp.png",
+            "name": "Weather App",
+            "category": "Weather App",
+            "member": [
+                {
+                    "name": "Hilmi Arizal",
+                    "position": "Front End Developer (Web)"
+                }
+            ],
+            "technology": {
+                "language": "Javascript",
+                "mobile": null,
+                "frontend": "Vue JS",
+                "backend": "",
+                "database": "",
+                "tools": "Weather API, Bootstrap, Postman, Github"
+            },
+            "type": "Mini Project"
+        },
+        {
+            "id": 6,
+            "coverImage": "assets/images/CalculatorApp.png",
+            "name": "Calculator App",
+            "category": "Calculator App",
+            "member": [
+                {
+                    "name": "Hilmi Arizal",
+                    "position": "Front End Developer (Web)"
+                }
+            ],
+            "technology": {
+                "language": "Javascript",
+                "mobile": null,
+                "frontend": "Vue JS",
+                "backend": "",
+                "database": "",
+                "tools": "Bootstrap, Github"
+            },
+            "type": "Mini Project"
+        }
+    ]
+}
