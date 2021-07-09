@@ -42,47 +42,90 @@
 }
 
 .contact .title::after{
-    content: "Call Me Now";
+    content: "Who Hilmi ?";
 }
 
 .contact .text{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    justify-content: space-around;
+    margin-top: 20px;
 }
 
-.contact .contact-content .column{
+/* .contact .contact-content .column{
     width: 50%;
-}
-
-.contact .contact-content .left .contact-card div div{
-    font-weight: bold;
-    margin-top: 15px;
-}
-
-.contact .contact-content .right{
     margin-top: 10px;
-}
+} */
 
-ul li{
+.left ul li{
     list-style: none;
     display: flex;
     align-items: center;
+    margin-bottom: 5px;
 }
 
-ul li div{
-    font-size: 25px;
-    margin: 10px 10px;
+.contact img{
+    width: 150px;
+    border-radius: 6px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.left ul li > div:nth-child(1), .right ul li div{
+    font-size: 22px;
+    width: 30px;
+    text-align: center; 
+    margin-right: 10px;
+    color: crimson;
+}
+
+.left ul li span div{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.left ul li span span {
+    color: #111;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.right ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.right ul li > div{
+    font-size: 22px;
     width: 30px;
     text-align: center;
 }
 
+.right ul li span a{
+    color: #111;
+    font-size: 12px;
+    transition: all 0.3s ease;
+    text-decoration: underline;
+}
+
+.right ul li span a:hover{
+    color: crimson;
+}
+
 @media (max-width: 947px){
+    .max-width{
+        padding: 0 50px;
+    }
     .contact .contact-content .column{
         width: 100%;
     }

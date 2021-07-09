@@ -133,16 +133,16 @@
     width: 60%;
 }
 
-.skill .skill-content .right .React:before{
-    width: 80%;
+.skill .skill-content .right .ReactJS:before{
+    width: 70%;
 }
 
-.skill .skill-content .right .NodeJS :before{
+.skill .skill-content .right .NodeJS:before{
     width: 60%;
 }
 
 .skill .skill-content .right .Angular:before{
-    width: 70%;
+    width: 80%;
 }
 
 

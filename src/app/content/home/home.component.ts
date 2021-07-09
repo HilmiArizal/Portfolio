@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+// import Typewriter from 't-writer.js'
+// import Typewriter from 'typewriter-effect/dist/core';
+
 import { MatTableDataSource } from '@angular/material/table';
 import { Response } from 'src/app/interface/response';
 import { Skill } from 'src/app/interface/skill';
@@ -11,9 +14,13 @@ import { SkillService } from 'src/app/service/skill.service';
 })
 export class HomeComponent implements OnInit {
 
+  public index: any = 0;
+  public text: string = "";
+
   constructor() { }
 
   ngOnInit(): void {
+
   }
 
 
