@@ -17,7 +17,7 @@
 
 .navbar.sticky{
     padding: 15px 0;
-    background: crimson;
+    background: #0096FF;
 }
 
 .navbar .max-width{
@@ -32,8 +32,12 @@
     font-weight: 500;
 }
 
+.navbar.sticky .logo div{
+    color: #111;
+}
+
 .navbar .logo div span{
-    color: crimson;
+    color: #0096FF;
 }
 
 .navbar.sticky .logo div span{
@@ -56,11 +60,15 @@
 }
 
 .navbar .menu li div:hover{
-    color: crimson
+    color: #0096FF;
+}
+
+.navbar.sticky .menu li div{
+    color: #111;
 }
 
 .navbar.sticky .menu li div:hover{
-    color: rgb(155, 155, 155);
+    color: #fff;
 }
 
 .menu-btn{

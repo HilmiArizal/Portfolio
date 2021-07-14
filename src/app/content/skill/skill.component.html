@@ -1,32 +1,68 @@
 <div class="skill">
 
-    <div class="max-width">
-        <h2 class="title">My Skills</h2>
-        <div class="skill-content">
-          <div class="column left">
-            <div class="text">My Creative Skills & Experience</div>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident dolorem ipsa excepturi repellat amet
-              quaerat soluta eos! Doloribus atque consequatur deleniti officia magni unde beatae! Voluptas, dignissimos
-              amet soluta quam quibusdam dolorum facere fugit exercitationem quo ab sunt, repellendus perferendis quis!
-              Sed possimus omnis at aliquam officia facere architecto iste, eius eos facilis minus delectus eum
-              dignissimos quaerat mollitia! Labore.</p>
-            <a href="#">Read more</a>
-          </div>
-          <div class="column right" *ngIf="dataSkill;else dataEmpty">
-            <div *ngFor="let item of dataSkill">
-              <div class="bars">
-                <div class="info">
-                  <span>{{item.skill}}</span>
-                  <span>{{item.percentage}}%</span>
-                </div>
-                <div class="line {{item.skill}}"></div>
-              </div>
-            </div>
-          </div>
-          <ng-template #dataEmpty>
-            Data Is Empty
+  <div class="max-width">
+    <h2 class="title">My Skills</h2>
+    <div class="skill-content">
+      <div class="column left">
+        <div class="text">My Creative Skills & Experience</div>
+        <p>
+          <span *ngIf="!openRM; else open">
+            When I graduated from college, I took 4 months of training at Purwadika in the field of Technology and
+            Information, namely web and mobile development.
+            I learned fullstack from the <strong>HTML</strong>, <strong>CSS</strong>,
+            language using<strong>Javascript</strong>,
+            front end using <strong> React JS</strong> and <strong>React Native</strong>,
+            back end using <strong> Node JS</strong>,
+            database using <strong>MySQL (Workbench) & NoSQL (MongoDB)</strong>,
+            testing API from backend using
+            <strong>Postman</strong>
+            and deploy using <strong>Heroku</strong>.
+            After I graduated, I took an internship for 6 months at PT. Parmigas in Accounting works on daily reports
+            to balance sheets using <strong> Microsoft Excel</strong>.
+            <a (click)="openReadMore()">Read more</a>
+          </span>
+
+          <ng-template #open>
+            When I graduated from college, I took 4 months of training at Purwadika in the field of Technology and
+            Information, namely web and mobile development.
+            I learned fullstack from the <strong>HTML</strong>, <strong>CSS</strong>,
+            language using<strong>Javascript</strong>,
+            front end using <strong> React JS</strong> and <strong>React Native</strong>,
+            back end using <strong> Node JS</strong>,
+            database using <strong>MySQL (Workbench) & NoSQL (MongoDB)</strong>,
+            testing API from backend using
+            <strong>Postman</strong>
+            and deploy using <strong>Heroku</strong>.
+            After I graduated, I took an internship for 6 months at PT. Parmigas in Accounting works on daily reports
+            to balance sheets using <strong> Microsoft Excel</strong>.
+            After 6 months I took a fullstack (freelance) project working on
+            e-commerce web at CV. Heaven Sentosa for 3 months. The technology I use is the
+            front end using <strong>React JS</strong>,
+            back end using <strong> Node JS</strong>,
+            and database using <strong>MySQL (Workbench)</strong>.
+            After that I contracted with PT. Redcorp Teknologi
+            Indonesia for 6 months, I concentrated on the position of front end web developer using the new technology,
+            namely <strong> Angular</strong> with <strong> Typescript </strong> language.
+            <a (click)="openReadMore()">Read less</a>
+
           </ng-template>
+        </p>
+      </div>
+      <div class="column right" *ngIf="dataSkill;else dataEmpty">
+        <div *ngFor="let item of dataSkill">
+          <div class="bars">
+            <div class="info">
+              <span>{{item.skill}}</span>
+              <span>{{item.percentage}}%</span>
+            </div>
+            <div class="line {{item.skill}}"></div>
+          </div>
         </div>
       </div>
+      <ng-template #dataEmpty>
+        Data Is Empty
+      </ng-template>
+    </div>
+  </div>
 
 </div>

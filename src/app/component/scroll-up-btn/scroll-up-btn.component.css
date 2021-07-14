@@ -2,7 +2,7 @@
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background: #0096FF;
     right: 30px;
     bottom: 30px;
     text-align: center;
@@ -24,7 +24,7 @@
 }
 
 .scroll-up-btn:hover{
-    border: 2px solid crimson;
-    background-color: #fff;
-    color: crimson;
+    border: 1px solid #0096FF;
+    background: #fff;
+    color: #0096FF;
 }

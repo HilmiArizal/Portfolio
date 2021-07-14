@@ -11,6 +11,7 @@ import { SkillService } from 'src/app/service/skill.service';
 export class SkillComponent implements OnInit {
 
   public dataSkill!: Skill[];
+  public openRM: boolean = false
 
   constructor(
     private skillService: SkillService
@@ -26,6 +27,10 @@ export class SkillComponent implements OnInit {
       let responseContent = response.content;
       this.dataSkill = responseContent!;
     });
+  }
+
+  openReadMore(){
+    this.openRM = !this.openRM;
   }
 
 }

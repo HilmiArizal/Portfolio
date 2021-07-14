@@ -35,7 +35,7 @@
     bottom: -15px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: #0096FF;
     padding: 5px;
     background-color: #fff;
     transform: translateX(-50%);
@@ -68,19 +68,19 @@
 
 .skill .skill-content .left a{
     display: inline-block;
-    background-color: crimson;
+    background-color: #0096FF;
     color: #fff;
     font-size: 15px;
     padding: 5px 20px;
     margin-top: 20px;
     border-radius: 6px;
     cursor: pointer;
-    border: 2px solid crimson;
+    border: 2px solid #0096FF;
     transition: all 0.3s ease;
 }
 
 .skill .skill-content .left a:hover{
-    color: crimson;
+    color: #0096FF;
     background: none;
 }
 
@@ -114,7 +114,7 @@
     width: 80%;
     left: 0;
     top: 0;
-    background: crimson;
+    background: #0096FF;
 }
 
 .skill .skill-content .right .HTML:before{

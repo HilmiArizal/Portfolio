@@ -37,25 +37,25 @@
 }
 
 .home .home-content .text:nth-child(3) span{
-    color: crimson;
+    color: #0096FF;
     font-weight: 500;
 }
 
 .home .home-content .text:nth-child(4){
   display: inline-block;
-  background-color: crimson;
+  background-color: #0096FF;
   color: #fff;
   font-size: 25px;
   padding: 12px 36px;
   margin-top: 20px;
   border-radius: 6px;
   cursor: pointer;
-  border: 2px solid crimson;
+  border: 2px solid #0096FF;
   transition: all 0.3s ease;
 }
 
 .home .home-content .text:nth-child(4):hover{
-    color: crimson;
+    color: #0096FF;
     background: none;
 }
 

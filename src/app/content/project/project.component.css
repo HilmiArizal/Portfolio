@@ -35,7 +35,7 @@
     bottom: -15px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: #0096FF;
     padding: 5px;
     background-color: #111;
     transform: translateX(-50%);
@@ -84,13 +84,13 @@
 
   .btn-tech{
     display: inline-block;
-    background-color: crimson;
+    background-color: #0096FF;
     color: #fff;
     font-size: 12px;
     padding: 5px 20px;
     border-radius: 6px;
     cursor: pointer;
-    border: 2px solid crimson;
+    border: 2px solid #0096FF;
     transition: all 0.3s ease;
   }
 
@@ -115,7 +115,7 @@
 }
 
 .project ::ng-deep.owl-prev:hover {
-    background-color: crimson;
+    background-color: #0096FF;
 }
 
 .project ::ng-deep.owl-next {
@@ -125,7 +125,7 @@
 }
 
 .project ::ng-deep.owl-next:hover {
-    background-color: crimson;
+    background-color: #0096FF;
 }
 
 .project ::ng-deep.owl-prev i, .project ::ng-deep.owl-next i{

@@ -36,7 +36,7 @@
     bottom: -15px;
     left: 50%;
     font-size: 20px;
-    color: crimson;
+    color: #0096FF;
     padding: 5px;
     background-color: #fff;
     transform: translateX(-50%);
@@ -75,7 +75,7 @@
 }
 
 .about .about-content .right .text span{
-    color: crimson  ;
+    color: #0096FF  ;
 }
 
 .about .about-content .right p{
@@ -84,19 +84,19 @@
 
 .about .about-content .right a{
     display: inline-block;
-    background-color: crimson;
+    background-color: #0096FF;
     color: #fff;
     font-size: 15px;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
     cursor: pointer;
-    border: 2px solid crimson;
+    border: 2px solid #0096FF;
     transition: all 0.3s ease;
 }
 
 .about .about-content .right a:hover{
-    color: crimson;
+    color: #0096FF;
     background: none;
 }
 
