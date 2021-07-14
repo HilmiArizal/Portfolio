@@ -118,4 +118,8 @@
         margin: 20px 0;
         font-size: 25px;
     }
+
+    .navbar.sticky .menu li div{
+        color: #fff;
+    }
 }
