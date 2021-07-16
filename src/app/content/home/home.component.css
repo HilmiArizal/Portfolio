@@ -54,6 +54,10 @@
   transition: all 0.3s ease;
 }
 
+.home .home-content .text:nth-child(4) a{
+    color: #fff;
+}
+
 .home .home-content .text:nth-child(4):hover{
     color: #0096FF;
     background: none;
